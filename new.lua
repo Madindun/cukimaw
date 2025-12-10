@@ -15,22 +15,85 @@
     License: MIT
 ]]
 
+local a a={cache={}, load=function(b)if not a.cache[b]then a.cache[b]={c=a[b]()}end return a.cache[b].c end}do function a.a()return{
 
-local a a={cache={}, load=function(b)if not a.cache[b]then a.cache[b]={c=a[b]()}end return a.cache[b].c end}do function a.a()local b=game:GetService"RunService"local d=
-b.Heartbeat
-local e=game:GetService"UserInputService"
-local f=game:GetService"TweenService"
-local g=game:GetService"LocalizationService"
-local h=game:GetService"HttpService"
 
-local i="https://raw.githubusercontent.com/Footagesus/Icons/main/Main-v2.lua"
+Primary=Color3.fromHex"#0091FF",
 
-local j=loadstring(
-game.HttpGetAsync and game:HttpGetAsync(i)
-or h:GetAsync(i)
+White=Color3.new(1,1,1),
+Black=Color3.new(0,0,0),
+
+Dialog="Accent",
+
+Background="Accent",
+BackgroundTransparency=0,
+Hover="Text",
+
+WindowBackground="Background",
+
+WindowShadow="Black",
+
+
+WindowTopbarTitle="Text",
+WindowTopbarAuthor="Text",
+WindowTopbarIcon="Icon",
+WindowTopbarButtonIcon="Icon",
+
+TabBackground="Hover",
+TabTitle="Text",
+TabIcon="Icon",
+
+ElementBackground="Text",
+ElementTitle="Text",
+ElementDesc="Text",
+ElementIcon="Icon",
+
+PopupBackground="Background",
+PopupBackgroundTransparency="BackgroundTransparency",
+PopupTitle="Text",
+PopupContent="Text",
+PopupIcon="Icon",
+
+DialogBackground="Background",
+DialogBackgroundTransparency="BackgroundTransparency",
+DialogTitle="Text",
+DialogContent="Text",
+DialogIcon="Icon",
+
+Toggle="Button",
+ToggleBar="White",
+
+Checkbox="Primary",
+CheckboxIcon="White",
+
+Slider="Primary",
+SliderThumb="White",
+SliderIconFrom=Color3.fromHex"#908F95",
+SliderIconTo=Color3.fromHex"#908F95",
+
+Tooltip=Color3.fromHex"4C4C4C",
+TooltipText="White",
+TooltipSecondary="Primary",
+TooltipSecondaryText="White",
+}end function a.b()
+
+local b=(cloneref or clonereference or function(b)return b end)
+
+local d=b(game:GetService"RunService")
+local e=b(game:GetService"UserInputService")
+local f=b(game:GetService"TweenService")
+local g=b(game:GetService"LocalizationService")
+local h=b(game:GetService"HttpService")local i=
+
+d.Heartbeat
+
+local j="https://raw.githubusercontent.com/Footagesus/Icons/main/Main-v2.lua"
+
+local l=loadstring(
+game.HttpGetAsync and game:HttpGetAsync(j)
+or h:GetAsync(j)
 )()
-
-local l
+l.SetIconsType"lucide"
 
 local m={
 Font="rbxassetid://12187365364",
@@ -781,8 +844,8 @@ local l
 if i.CanClose then
 l=e("ImageButton",{
 Image=b.Icon"x"[1],
-ImageRectSize=b.Icon"x",
-ImageRectOffset=b.Icon"x",
+ImageRectSize=b.Icon"x"[2].ImageRectSize,
+ImageRectOffset=b.Icon"x"[2].ImageRectPosition,
 BackgroundTransparency=1,
 Size=UDim2.new(0,16,0,16),
 Position=UDim2.new(1,-g.UIPadding,0,g.UIPadding),
@@ -3797,8 +3860,8 @@ Name="Drag",
 },{
 ac("ImageLabel",{
 Image=ab.Icon"move"[1],
-ImageRectOffset=ab.Icon"move",
-ImageRectSize=ab.Icon"move",
+ImageRectOffset=ab.Icon"move"[2].ImageRectPosition,
+ImageRectSize=ab.Icon"move"[2].ImageRectSize,
 Size=UDim2.new(0,18,0,18),
 BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
@@ -6343,8 +6406,8 @@ an.UIElements.Dropdown.AnchorPoint=Vector2.new(1,0.5)
 
 ae("ImageLabel",{
 Image=ac.Icon"chevrons-up-down"[1],
-ImageRectOffset=ac.Icon"chevrons-up-down",
-ImageRectSize=ac.Icon"chevrons-up-down",
+ImageRectOffset=ac.Icon"chevrons-up-down"[2].ImageRectPosition,
+ImageRectSize=ac.Icon"chevrons-up-down"[2].ImageRectSize,
 Size=UDim2.new(0,18,0,18),
 Position=UDim2.new(1,-12,0.5,0),
 ThemeTag={
@@ -6626,8 +6689,8 @@ Scale=1,
 }),
 ag("ImageLabel",{
 Image=ae.Icon"copy"[1],
-ImageRectSize=ae.Icon"copy",
-ImageRectOffset=ae.Icon"copy",
+ImageRectSize=ae.Icon"copy"[2].ImageRectSize,
+ImageRectOffset=ae.Icon"copy"[2].ImageRectPosition,
 BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
@@ -7598,8 +7661,8 @@ ae("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
 BackgroundTransparency=1,
 Image=ac.Icon"chevron-down"[1],
-ImageRectSize=ac.Icon"chevron-down",
-ImageRectOffset=ac.Icon"chevron-down",
+ImageRectSize=ac.Icon"chevron-down"[2].ImageRectSize,
+ImageRectOffset=ac.Icon"chevron-down"[2].ImageRectPosition,
 ThemeTag={
 ImageColor3="Icon",
 },
@@ -8434,8 +8497,8 @@ FillDirection="Vertical",
 ag("ImageLabel",{
 Size=UDim2.new(0,48,0,48),
 Image=ae.Icon"frown"[1],
-ImageRectOffset=ae.Icon"frown",
-ImageRectSize=ae.Icon"frown",
+ImageRectOffset=ae.Icon"frown"[2].ImageRectPosition,
+ImageRectSize=ae.Icon"frown"[2].ImageRectSize,
 ThemeTag={
 ImageColor3="Icon"
 },
@@ -8558,8 +8621,8 @@ ag("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
 BackgroundTransparency=1,
 Image=ae.Icon"chevron-down"[1],
-ImageRectSize=ae.Icon"chevron-down",
-ImageRectOffset=ae.Icon"chevron-down",
+ImageRectSize=ae.Icon"chevron-down"[2].ImageRectSize,
+ImageRectOffset=ae.Icon"chevron-down"[2].ImageRectPosition,
 ThemeTag={
 ImageColor3="Icon",
 },
@@ -8742,8 +8805,8 @@ TextSize=18,
 
 local ao=ag("ImageLabel",{
 Image=ae.Icon"x"[1],
-ImageRectSize=ae.Icon"x",
-ImageRectOffset=ae.Icon"x",
+ImageRectSize=ae.Icon"x"[2].ImageRectSize,
+ImageRectOffset=ae.Icon"x"[2].ImageRectPosition,
 BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
@@ -8818,8 +8881,8 @@ BackgroundTransparency=1,
 },{
 ag("ImageLabel",{
 Image=ae.Icon"search"[1],
-ImageRectSize=ae.Icon"search",
-ImageRectOffset=ae.Icon"search",
+ImageRectSize=ae.Icon"search"[2].ImageRectSize,
+ImageRectOffset=ae.Icon"search"[2].ImageRectPosition,
 BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
@@ -9370,6 +9433,8 @@ Active=false,
 ai("ImageLabel",{
 Size=UDim2.new(0,70,0,70),
 Image=ag.Icon"expand"[1],
+ImageRectOffset=ag.Icon"expand"[2].ImageRectPosition,
+ImageRectSize=ag.Icon"expand"[2].ImageRectSize,
 BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),

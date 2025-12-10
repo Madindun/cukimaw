@@ -781,8 +781,8 @@ local l
 if i.CanClose then
 l=e("ImageButton",{
 Image=b.Icon"x"[1],
-ImageRectSize=b.Icon"x"[2].ImageRectSize,
-ImageRectOffset=b.Icon"x"[2].ImageRectPosition,
+ImageRectSize=b.Icon"x",
+ImageRectOffset=b.Icon"x",
 BackgroundTransparency=1,
 Size=UDim2.new(0,16,0,16),
 Position=UDim2.new(1,-g.UIPadding,0,g.UIPadding),
@@ -3797,8 +3797,8 @@ Name="Drag",
 },{
 ac("ImageLabel",{
 Image=ab.Icon"move"[1],
-ImageRectOffset=ab.Icon"move"[2].ImageRectPosition,
-ImageRectSize=ab.Icon"move"[2].ImageRectSize,
+ImageRectOffset=ab.Icon"move",
+ImageRectSize=ab.Icon"move",
 Size=UDim2.new(0,18,0,18),
 BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
@@ -6343,8 +6343,8 @@ an.UIElements.Dropdown.AnchorPoint=Vector2.new(1,0.5)
 
 ae("ImageLabel",{
 Image=ac.Icon"chevrons-up-down"[1],
-ImageRectOffset=ac.Icon"chevrons-up-down"[2].ImageRectPosition,
-ImageRectSize=ac.Icon"chevrons-up-down"[2].ImageRectSize,
+ImageRectOffset=ac.Icon"chevrons-up-down",
+ImageRectSize=ac.Icon"chevrons-up-down",
 Size=UDim2.new(0,18,0,18),
 Position=UDim2.new(1,-12,0.5,0),
 ThemeTag={
@@ -6626,8 +6626,8 @@ Scale=1,
 }),
 ag("ImageLabel",{
 Image=ae.Icon"copy"[1],
-ImageRectSize=ae.Icon"copy"[2].ImageRectSize,
-ImageRectOffset=ae.Icon"copy"[2].ImageRectPosition,
+ImageRectSize=ae.Icon"copy",
+ImageRectOffset=ae.Icon"copy",
 BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
@@ -7598,8 +7598,8 @@ ae("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
 BackgroundTransparency=1,
 Image=ac.Icon"chevron-down"[1],
-ImageRectSize=ac.Icon"chevron-down"[2].ImageRectSize,
-ImageRectOffset=ac.Icon"chevron-down"[2].ImageRectPosition,
+ImageRectSize=ac.Icon"chevron-down",
+ImageRectOffset=ac.Icon"chevron-down",
 ThemeTag={
 ImageColor3="Icon",
 },
@@ -8434,8 +8434,8 @@ FillDirection="Vertical",
 ag("ImageLabel",{
 Size=UDim2.new(0,48,0,48),
 Image=ae.Icon"frown"[1],
-ImageRectOffset=ae.Icon"frown"[2].ImageRectPosition,
-ImageRectSize=ae.Icon"frown"[2].ImageRectSize,
+ImageRectOffset=ae.Icon"frown",
+ImageRectSize=ae.Icon"frown",
 ThemeTag={
 ImageColor3="Icon"
 },
@@ -8558,8 +8558,8 @@ ag("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
 BackgroundTransparency=1,
 Image=ae.Icon"chevron-down"[1],
-ImageRectSize=ae.Icon"chevron-down"[2].ImageRectSize,
-ImageRectOffset=ae.Icon"chevron-down"[2].ImageRectPosition,
+ImageRectSize=ae.Icon"chevron-down",
+ImageRectOffset=ae.Icon"chevron-down",
 ThemeTag={
 ImageColor3="Icon",
 },
@@ -8742,8 +8742,8 @@ TextSize=18,
 
 local ao=ag("ImageLabel",{
 Image=ae.Icon"x"[1],
-ImageRectSize=ae.Icon"x"[2].ImageRectSize,
-ImageRectOffset=ae.Icon"x"[2].ImageRectPosition,
+ImageRectSize=ae.Icon"x",
+ImageRectOffset=ae.Icon"x",
 BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
@@ -8818,8 +8818,8 @@ BackgroundTransparency=1,
 },{
 ag("ImageLabel",{
 Image=ae.Icon"search"[1],
-ImageRectSize=ae.Icon"search"[2].ImageRectSize,
-ImageRectOffset=ae.Icon"search"[2].ImageRectPosition,
+ImageRectSize=ae.Icon"search",
+ImageRectOffset=ae.Icon"search",
 BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",

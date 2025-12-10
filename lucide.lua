@@ -9371,7 +9371,7 @@ ai("ImageLabel",{
 Size=UDim2.new(0,70,0,70),
 Image=ag.Icon"expand"[1],
 ImageRectOffset=ag.Icon"expand"[2],
-ImageRectSize=ag.Icon"expand"[2].ImageRectSize,
+ImageRectSize=ag.Icon"expand"[2],
 BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),

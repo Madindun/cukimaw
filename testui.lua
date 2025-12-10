@@ -781,6 +781,8 @@ local l
 if i.CanClose then
 l=e("ImageButton",{
 Image=b.Icon"x"[1],
+ImageRectSize=b.Icon"x"[2],
+ImageRectOffset=b.Icon"x"[2],
 BackgroundTransparency=1,
 Size=UDim2.new(0,16,0,16),
 Position=UDim2.new(1,-g.UIPadding,0,g.UIPadding),
@@ -1424,6 +1426,8 @@ local am
 if af and af~=""then
 am=ac("ImageLabel",{
 Image=ab.Icon(af)[1],
+ImageRectSize=ab.Icon(af)[2],
+ImageRectOffset=ab.Icon(af)[2],
 Size=UDim2.new(0,21,0,21),
 BackgroundTransparency=1,
 ImageColor3=ah=="White"and Color3.new(0,0,0)or nil,
@@ -1566,6 +1570,8 @@ local an
 if af and af~=""then
 an=ac("ImageLabel",{
 Image=ab.Icon(af)[1],
+ImageRectSize=ab.Icon(af)[2],
+ImageRectOffset=ab.Icon(af)[2],
 Size=UDim2.new(0,21,0,21),
 BackgroundTransparency=1,
 ThemeTag={
@@ -3099,6 +3105,8 @@ local aj
 if af and af~=""then
 aj=ac("ImageLabel",{
 Image=ab.Icon(af)[1],
+ImageRectSize=ab.Icon(af)[2],
+ImageRectOffset=ab.Icon(af)[2],
 Size=UDim2.new(0,21,0,21),
 BackgroundTransparency=1,
 ThemeTag={
@@ -3789,6 +3797,8 @@ Name="Drag",
 },{
 ac("ImageLabel",{
 Image=ab.Icon"move"[1],
+ImageRectOffset=ab.Icon"move"[2],
+ImageRectSize=ab.Icon"move"[2],
 Size=UDim2.new(0,18,0,18),
 BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
@@ -4975,6 +4985,8 @@ BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Image=ab.Icon(af)[1],
+ImageRectOffset=ab.Icon(af)[2],
+ImageRectSize=ab.Icon(af)[2],
 ImageTransparency=1,
 ImageColor3=Color3.new(0,0,0),
 })
@@ -5100,6 +5112,8 @@ BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
 Image=ab.Icon(af)[1],
+ImageRectOffset=ab.Icon(af)[2],
+ImageRectSize=ab.Icon(af)[2],
 ImageTransparency=1,
 ImageColor3=Color3.new(1,1,1),
 })
@@ -6329,6 +6343,8 @@ an.UIElements.Dropdown.AnchorPoint=Vector2.new(1,0.5)
 
 ae("ImageLabel",{
 Image=ac.Icon"chevrons-up-down"[1],
+ImageRectOffset=ac.Icon"chevrons-up-down"[2],
+ImageRectSize=ac.Icon"chevrons-up-down"[2],
 Size=UDim2.new(0,18,0,18),
 Position=UDim2.new(1,-12,0.5,0),
 ThemeTag={
@@ -6610,6 +6626,8 @@ Scale=1,
 }),
 ag("ImageLabel",{
 Image=ae.Icon"copy"[1],
+ImageRectSize=ae.Icon"copy"[2],
+ImageRectOffset=ae.Icon"copy"[2],
 BackgroundTransparency=1,
 AnchorPoint=Vector2.new(0.5,0.5),
 Position=UDim2.new(0.5,0,0.5,0),
@@ -6732,10 +6750,14 @@ if an then
 an()
 local av=ae.Icon"check"
 as.Button.ImageLabel.Image=av[1]
+as.Button.ImageLabel.ImageRectSize=av[2]
+as.Button.ImageLabel.ImageRectOffset=av[2]
 
 task.wait(1)
 local aw=ae.Icon"copy"
 as.Button.ImageLabel.Image=aw[1]
+as.Button.ImageLabel.ImageRectSize=aw[2]
+as.Button.ImageLabel.ImageRectOffset=aw[2]
 end
 end)
 return ap
@@ -7576,6 +7598,8 @@ ae("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
 BackgroundTransparency=1,
 Image=ac.Icon"chevron-down"[1],
+ImageRectSize=ac.Icon"chevron-down"[2],
+ImageRectOffset=ac.Icon"chevron-down"[2],
 ThemeTag={
 ImageColor3="Icon",
 },
@@ -8410,6 +8434,8 @@ FillDirection="Vertical",
 ag("ImageLabel",{
 Size=UDim2.new(0,48,0,48),
 Image=ae.Icon"frown"[1],
+ImageRectOffset=ae.Icon"frown"[2],
+ImageRectSize=ae.Icon"frown"[2],
 ThemeTag={
 ImageColor3="Icon"
 },
@@ -8532,6 +8558,8 @@ ag("ImageLabel",{
 Size=UDim2.new(1,0,1,0),
 BackgroundTransparency=1,
 Image=ae.Icon"chevron-down"[1],
+ImageRectSize=ae.Icon"chevron-down"[2],
+ImageRectOffset=ae.Icon"chevron-down"[2],
 ThemeTag={
 ImageColor3="Icon",
 },
@@ -8714,6 +8742,8 @@ TextSize=18,
 
 local ao=ag("ImageLabel",{
 Image=ae.Icon"x"[1],
+ImageRectSize=ae.Icon"x"[2],
+ImageRectOffset=ae.Icon"x"[2],
 BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
@@ -8788,6 +8818,8 @@ BackgroundTransparency=1,
 },{
 ag("ImageLabel",{
 Image=ae.Icon"search"[1],
+ImageRectSize=ae.Icon"search"[2],
+ImageRectOffset=ae.Icon"search"[2],
 BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
@@ -8911,6 +8943,8 @@ PaddingBottom=UDim.new(0,am.Padding-2),
 }),
 ag("ImageLabel",{
 Image=ae.Icon(av)[1],
+ImageRectSize=ae.Icon(av)[2],
+ImageRectOffset=ae.Icon(av)[2],
 BackgroundTransparency=1,
 ThemeTag={
 ImageColor3="Icon",
@@ -9336,6 +9370,8 @@ Active=false,
 ai("ImageLabel",{
 Size=UDim2.new(0,70,0,70),
 Image=ag.Icon"expand"[1],
+ImageRectOffset=ag.Icon"expand"[2],
+ImageRectSize=ag.Icon"expand"[2],
 BackgroundTransparency=1,
 Position=UDim2.new(0.5,0,0.5,0),
 AnchorPoint=Vector2.new(0.5,0.5),
